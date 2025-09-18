@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <nav class="nav-wrap">
+                <ul class="nav-list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Order</a></li>
+                    <li><a href="">Food</a></li>
+                    <li><a href="">Restaurant</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
+        <section>
+            <div class="banner-wrap">
+                <div class="banner-content">
+                   <h1> LOREM IPSUM</h1>
+                   <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta viverra.</p>
+                   <button class="btn-click">Click Me</button>
+                </div>
+                <div class="image-content">
+                    <img src="assets/pexels-robin-stickel-70497.jpg" alt="Banner-images"/>
+                </div>
+            </div>
+            <div class="set-admire-wrap">
+                <div class="set-image">
+                    <div class="dual-set">
+                        <img src="assets/pexels-rachel-claire-6752433.jpg"/>
+                        <img src="assets/pexels-eva-bronzini-6141651.jpg"/>
+                    </div>
+                    <div class="single-img">
+                        <img src="assets/pexels-mister-mister-3434523.jpg"/>
+                    </div>
+                </div>
+                <div class="set-info">
+                    <div class="set-content">
+                         <span>LOREM IPSUM</span>
+                        <h2>LOREM IPSUM <br> SET ADEMIR</h2>
+                        <div class="set-link">
+                            <a href="#">Click</a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+</body>
+<script>
+    const Hamburger = document.getElementById('hamburger');
+    const navList = document.querySelector('.nav-list')
+    Hamburger.addEventListener('click', ()=>{
+        Hamburger.classList.toggle('active');
+        navList.classList.toggle('slide')
+    })
+</script>
+</html>
